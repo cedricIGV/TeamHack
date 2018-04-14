@@ -18,3 +18,9 @@ def scrub():
             os.remove(currentFile)
             print("Deleted " + currentFile)
     return
+
+def main():
+    scrub()
+
+if __name__ == "__main__":
+    main()
