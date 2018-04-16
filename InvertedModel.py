@@ -63,7 +63,7 @@ def main():
         y1 = np.reshape(np.array(y[i:i+100]), (100, 150, 150))
         x1 = np.reshape(np.array(x[i:i+100]), (100, 1, 2))
 
-        model.fit(x1,y1, batch_size=10, epochs=10, verbose=2)
+        model.fit(x1,y1, batch_size=1, epochs=1000, verbose=2)
         model.save('inverted.h5')
         i = i+100
         print("Training Model " + str(int((i*100)/len(x))) + "%", end='\r'),
